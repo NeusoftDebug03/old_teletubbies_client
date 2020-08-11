@@ -83,7 +83,7 @@
                             //userImg数据量大，有可能溢出，不能放入SessionStorage中
                             // user.userImg = "";
                             this.$setSessionStorage("user", user);
-                            this.$router.go(-1);
+                            // this.$router.go(-1);
                         }
                     })
                     .catch((error) => {
@@ -125,39 +125,45 @@
     /****************** 表单部分 ******************/
     .wrapper .form-box {
         width: 100%;
-        margin-top: 12vw;
+        /*margin: 10vw 3vw 0 3vw;*/
+        margin-top: 8vw;
     }
+
     .wrapper .form-box li {
-        box-sizing: border-box;
-        padding: 4vw 3vw 0 3vw;
         display: flex;
-        align-items: center;
+        align-content: center;
+        padding: 5vw 3vw 0 3vw;
+        box-sizing: border-box;
     }
+
     .wrapper .form-box li .title {
-        flex: 0 0 18vw;
-        font-size: 3vw;
-        font-weight: 700;
-        color: #666;
-    }
-    .wrapper .form-box li .content {
         flex: 1;
+        font-size: 5vw;
+        font-weight: 700;
+        color: #686869;
     }
+
+    .wrapper .form-box li .content {
+        flex: 2;
+    }
+
     .wrapper .form-box li .content input {
         border: none;
         outline: none;
         width: 100%;
-        height: 4vw;
-        font-size: 3vw;
+        height: 6vw;
+        font-size: 5vw;
     }
+
     .wrapper .button-login {
         width: 100%;
         box-sizing: border-box;
-        padding: 4vw 3vw 0 3vw;
+        padding: 5vw 3vw 0 3vw;
     }
     .wrapper .button-login button {
         width: 100%;
-        height: 10vw;
-        font-size: 3.8vw;
+        height: 12vw;
+        font-size: 6vw;
         font-weight: 700;
         color: #fff;
         background-color: #38ca73;
@@ -169,12 +175,12 @@
     .wrapper .button-register {
         width: 100%;
         box-sizing: border-box;
-        padding: 4vw 3vw 0 3vw;
+        padding: 5vw 3vw 0 3vw;
     }
     .wrapper .button-register button {
         width: 100%;
-        height: 10vw;
-        font-size: 3.8vw;
+        height: 12vw;
+        font-size: 6vw;
         font-weight: 700;
         /*与上面登陆按钮不同的只有颜色、背景色、边框不同*/
         color: #666;
